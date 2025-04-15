@@ -18,7 +18,7 @@ void rtpHeaderInit(struct RtpPacket* rtpPacket, uint8_t csrcLen, uint8_t extensi
     rtpPacket->rtpHeader.ssrc = ssrc;// 同步源标识符，用于标识发送者。
 }
 
-int rtpSendPacketOverTcp(int clientSockfd, struct RtpPacket* rtpPacket, uint32_t dataSize)
+int rtpSendPacketOverTcp(int clientSockfd, struct RtpPacket* rtpPacket, uint32_t dataSize,char channel)
 {
     rtpPacket->rtpHeader.seq = htons(rtpPacket->rtpHeader.seq);
     rtpPacket->rtpHeader.timestamp = htonl(rtpPacket->rtpHeader.timestamp);
@@ -27,7 +27,7 @@ int rtpSendPacketOverTcp(int clientSockfd, struct RtpPacket* rtpPacket, uint32_t
     uint32_t rtpSize = RTP_HEADER_SIZE + dataSize;// 计算RTP包的总大小（包括头部和负载）。
     char* tempBuf = (char*)malloc(4 + rtpSize);// 分配内存用于存储RTP包的临时缓冲区。
     tempBuf[0] = 0x24; // '$'
-    tempBuf[1] = 0x00;
+    tempBuf[1] = channel;// 0x00
     tempBuf[2] = (uint8_t)(((rtpSize) & 0xFF00) >> 8);
     tempBuf[3] = (uint8_t)((rtpSize) & 0xFF);
     memcpy(tempBuf + 4, (char*)rtpPacket, rtpSize);// 将RTP包复制到临时缓冲区中。

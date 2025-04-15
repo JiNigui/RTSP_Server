@@ -4,21 +4,20 @@ D:\FFmpeg_test\RTSP\RTP.h(26,13): warning C4200: 使用了非标准扩展: 结�
       D:\FFmpeg_test\RTSP\RTP.h(26,13):
       默认构造函数或 copy/move 赋值运算符将忽略此成员
   
-D:\FFmpeg_test\RTSP\RTSP.cpp(27,13): warning C4244: “初始化”: 从“SOCKET”转换到“int”，可能丢失数据
-D:\FFmpeg_test\RTSP\RTSP.cpp(43,13): warning C4244: “初始化”: 从“SOCKET”转换到“int”，可能丢失数据
-D:\FFmpeg_test\RTSP\RTSP.cpp(81,15): warning C4244: “初始化”: 从“SOCKET”转换到“int”，可能丢失数据
-D:\FFmpeg_test\RTSP\RTSP.cpp(102,37): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-D:\FFmpeg_test\RTSP\RTSP.cpp(118,3): warning C4477: “snprintf”: 格式字符串“%ld”需要类型“long”的参数，但可变参数 1 拥有了类型“time_t”
-      D:\FFmpeg_test\RTSP\RTSP.cpp(118,3):
+D:\FFmpeg_test\RTSP\RTSP.cpp(30,13): warning C4244: “初始化”: 从“SOCKET”转换到“int”，可能丢失数据
+D:\FFmpeg_test\RTSP\RTSP.cpp(46,13): warning C4244: “初始化”: 从“SOCKET”转换到“int”，可能丢失数据
+D:\FFmpeg_test\RTSP\RTSP.cpp(83,15): warning C4244: “初始化”: 从“SOCKET”转换到“int”，可能丢失数据
+D:\FFmpeg_test\RTSP\RTSP.cpp(164,37): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\FFmpeg_test\RTSP\RTSP.cpp(181,3): warning C4477: “snprintf”: 格式字符串“%ld”需要类型“long”的参数，但可变参数 1 拥有了类型“time_t”
+      D:\FFmpeg_test\RTSP\RTSP.cpp(181,3):
       请考虑在格式字符串中使用“%lld”
-      D:\FFmpeg_test\RTSP\RTSP.cpp(118,3):
+      D:\FFmpeg_test\RTSP\RTSP.cpp(181,3):
       请考虑在格式字符串中使用“%Id”
-      D:\FFmpeg_test\RTSP\RTSP.cpp(118,3):
+      D:\FFmpeg_test\RTSP\RTSP.cpp(181,3):
       请考虑在格式字符串中使用“%I64d”
   
-D:\FFmpeg_test\RTSP\RTSP.cpp(138,37): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-D:\FFmpeg_test\RTSP\RTSP.cpp(158,37): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-D:\FFmpeg_test\RTSP\RTSP.cpp(173,37): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-D:\FFmpeg_test\RTSP\RTSP.cpp(384,12): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-D:\FFmpeg_test\RTSP\RTSP.cpp(400,16): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
+D:\FFmpeg_test\RTSP\RTSP.cpp(266,44): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\FFmpeg_test\RTSP\RTSP.cpp(279,37): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\FFmpeg_test\RTSP\RTSP.cpp(427,12): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\FFmpeg_test\RTSP\RTSP.cpp(443,16): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
   RTSP.vcxproj -> D:\FFmpeg_test\RTSP\x64\Debug\RTSP.exe
